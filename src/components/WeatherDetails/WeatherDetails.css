@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+.weather-details {
+  position: relative;
+  width: 100%;
+  height: 25%;
+
+
+  /* Var used for shadow/glow on bottom of box */
+  --shadow-opacity: 0.4;
+
+  --bg-color: 255, 114, 255;
+
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0px 10px 15px 0px rgba(var(--bg-color), var(--shadow-opacity));
+  box-shadow: 0px 15px 25px 0px rgba(166, 188, 178, 0.3);
+  color: white;
+  --corner-radius: 26px;
+  border-radius: 0px 0px var(--corner-radius) var(--corner-radius);
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1rem;
+
+
+  transform: translateY(-170px);
+  transition-duration: 1s;
+
+
+}
+
+.weather-details.active {
+  transform: translateY(0px);
+}
+
+p {
+  position: relative;
+  padding-top: 10px;
+}
+
+p::after {
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 2px;
+  bottom: -2px;
+  left: 119px;
+  background-color: white;
+}
+
+.temp-text {
+  font-size: 4.0rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.location-text {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.date-text {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  margin-right: 20px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.weather-details.clear {
+
+  --bg-color: 99, 163, 117;
+
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0px 10px 15px 0px rgba(var(--bg-color), var(--shadow-opacity));
+}
+
+.weather-details.raining {
+
+  --bg-color: 62, 91, 163;
+
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0px 10px 15px 0px rgba(var(--bg-color), var(--shadow-opacity));
+}
+
+.weather-details.cloudy {
+
+  --bg-color: 175, 150, 162;
+
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0px 10px 15px 0px rgba(var(--bg-color), var(--shadow-opacity));
+}
+
+.weather-details.warm {
+  --bg-color: 213, 122, 102;
+
+  background-color: rgb(var(--bg-color));
+  box-shadow: 0px 10px 15px 0px rgba(var(--bg-color), var(--shadow-opacity));
+}
+
+.weather-icon {
+
+  --icon-size: 220px;
+
+  width: var(--icon-size);
+  height: var(--icon-size);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-52%);
+
+  margin-left: 10px;
+
+  background-image: url('https://cdn1.iconfinder.com/data/icons/weather-189/64/weather-icons-cloudy-256.png');
+  background-size: cover;
+
+  /* Icon is black so needs to be changed to be lighter  */
+  filter: contrast(200%) invert(100%);
+  /* will make it white */
+
+}
+
+
+/* Icons */
+
+.weather-icon.warm {
+  background-image: url('https://cdn3.iconfinder.com/data/icons/weather-icons-8/512/weather-sunny-512.png');
+  background-size: cover;
+}
+
+.weather-icon.cloudy {
+  background-image: url('https://cdn3.iconfinder.com/data/icons/weather-609/64/weather_cloud_cloudy-256.png');
+  background-size: cover;
+}
+
+.weather-icon.raining {
+  background-image: url('https://cdn3.iconfinder.com/data/icons/streamline-icon-set-free-pack/48/Streamline-84-512.png');
+  background-size: cover;
+}
+
+.weather-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
