@@ -7,6 +7,8 @@ Desktop version
 ![Screenshot](https://i.imgur.com/V0f4jVj.png)
 Mobile version
 
+Video: https://twitter.com/i/status/1224817006710489089
+
 
 **Quick Note:**
 
