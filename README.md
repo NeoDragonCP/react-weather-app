@@ -11,6 +11,7 @@ Video: https://twitter.com/i/status/1224817006710489089
 
 I am uploading this because I am interested in front-end development.
 It's only intended to be a fun portfolio piece.
+Be sure to check out the dev branch to see the code.
 
 **TODOs:**
 Fix crashing on entering random text.
