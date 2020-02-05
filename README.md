@@ -1,11 +1,8 @@
 # React Weather App
 By Stephen McVicker
 
-![Screenshot](https://i.imgur.com/SnfL9Lo.png)
-Desktop version
-
-![Screenshot](https://i.imgur.com/V0f4jVj.png)
-Mobile version
+![Screenshot](https://i.imgur.com/wBsB8YH.png)
+Desktop version/Mobile version
 
 Video: https://twitter.com/i/status/1224817006710489089
 
